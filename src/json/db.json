@@ -1,0 +1,128 @@
+[
+    {
+        "id": "KQetemT1sWc",
+        "titulo": "Here comes the sun - The Beatles",
+        "thumb": "https://img.youtube.com/vi/KQetemT1sWc/0.jpg",
+        "url": "https://www.youtube.com/watch?v=KQetemT1sWc",
+        "genero": "Rock"
+    },
+    {
+        "id": "8SbUC-UaAxE",
+        "titulo": "November rain - Guns N' Roses",
+        "thumb": "https://img.youtube.com/vi/8SbUC-UaAxE/0.jpg",
+        "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
+        "genero": "Rock"
+    },
+    {
+        "id": "mzJj5-lubeM",
+        "titulo": "Scar Tissue - Red Hot Chili Peppers",
+        "thumb": "https://img.youtube.com/vi/mzJj5-lubeM/0.jpg",
+        "url": "https://www.youtube.com/watch?v=mzJj5-lubeM",
+        "genero": "Rock"
+    },
+    {
+        "id": "eBG7P-K-r1Y",
+        "titulo": "Everlong - Foo Fighters",
+        "thumb": "https://img.youtube.com/vi/eBG7P-K-r1Y/0.jpg",
+        "url": "https://www.youtube.com/watch?v=eBG7P-K-r1Y",
+        "genero": "Rock"
+    },
+    {
+        "id": "kXYiU_JCYtU",
+        "titulo": "Numb - Linkin Park",
+        "thumb": "https://img.youtube.com/vi/kXYiU_JCYtU/0.jpg",
+        "url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+        "genero": "Rock"
+    },
+    {
+        "id": "94bGzWyHbu0",
+        "titulo": "Nightmare - Avengend Sevenfold",
+        "thumb": "https://img.youtube.com/vi/94bGzWyHbu0/0.jpg",
+        "url": "https://www.youtube.com/watch?v=94bGzWyHbu0",
+        "genero": "Rock"
+    },
+    {
+        "id": "FBMMNBOXins",
+        "titulo": "Chão de giz - Zé Ramalho (Ao vivo 2005)",
+        "thumb": "https://img.youtube.com/vi/FBMMNBOXins/0.jpg",
+        "url": "https://www.youtube.com/watch?v=FBMMNBOXins",
+        "genero": "MPB"
+    },
+    {
+        "id": "3rn2N0ZbLEQ",
+        "titulo": "É isso aí - Ana Carolina e Seu jorge (The Blower's Daughter)",
+        "thumb": "https://img.youtube.com/vi/3rn2N0ZbLEQ/0.jpg",
+        "url": "https://www.youtube.com/watch?v=3rn2N0ZbLEQ",
+        "genero": "MPB"
+    },
+    {
+        "id": "t7M89YJAPhM",
+        "titulo": "Ainda bem - Marisa Monte",
+        "thumb": "https://img.youtube.com/vi/t7M89YJAPhM/0.jpg",
+        "url": "https://www.youtube.com/watch?v=t7M89YJAPhM",
+        "genero": "MPB"
+    },
+    {
+        "id": "z7yWWsI5KcQ",
+        "titulo": "Sozinho - Caetano Veloso (Ao vivo no Rio De Janeiro / 1998)",
+        "thumb": "https://img.youtube.com/vi/z7yWWsI5KcQ/0.jpg",
+        "url": "https://www.youtube.com/watch?v=z7yWWsI5KcQ&",
+        "genero": "MPB"
+    },
+    {
+        "id": "JZusBA9VT7E",
+        "titulo": "Domingas - Jorge Ben Jor (1971)",
+        "thumb": "https://img.youtube.com/vi/JZusBA9VT7E/0.jpg",
+        "url": "https://www.youtube.com/watch?v=JZusBA9VT7E",
+        "genero": "MPB"
+    },
+    {
+        "id": "8PKs5Z1Cw_s",
+        "titulo": "Á primeira vista - Chico César",
+        "thumb": "https://img.youtube.com/vi/8PKs5Z1Cw_s/0.jpg",
+        "url": "https://www.youtube.com/watch?v=8PKs5Z1Cw_s",
+        "genero": "MPB"
+    },
+    {
+        "id": "W-w3WfgpcGg",
+        "titulo": "It Will Rain - Bruno Mars",
+        "thumb": "https://img.youtube.com/vi/W-w3WfgpcGg/0.jpg",
+        "url": "https://www.youtube.com/watch?v=W-w3WfgpcGg",
+        "genero": "PopInternacional"
+    },
+    {
+        "id": "dvgZkm1xWPE",
+        "titulo": "Viva La Vida - Coldplay",
+        "thumb": "https://img.youtube.com/vi/dvgZkm1xWPE/0.jpg",
+        "url": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
+        "genero": "PopInternacional"
+    },
+    {
+        "id": "XpqqjU7u5Yc",
+        "titulo": "How Deep Is Your Love - Bee Gees",
+        "thumb": "https://img.youtube.com/vi/XpqqjU7u5Yc/0.jpg",
+        "url": "https://www.youtube.com/watch?v=XpqqjU7u5Yc",
+        "genero": "PopInternacional"
+    },
+    {
+        "id": "djV11Xbc914",
+        "titulo": "Take On Me - a-ha",
+        "thumb": "https://img.youtube.com/vi/djV11Xbc914/0.jpg",
+        "url": "https://www.youtube.com/watch?v=djV11Xbc914",
+        "genero": "PopInternacional"
+    },
+    {
+        "id": "5X-Mrc2l1d0",
+        "titulo": "Rock With You - Michael Jackson",
+        "thumb": "https://img.youtube.com/vi/5X-Mrc2l1d0/0.jpg",
+        "url": "https://www.youtube.com/watch?v=5X-Mrc2l1d0",
+        "genero": "PopInternacional"
+    },
+    {
+        "id": "en2D_5TzXCA",
+        "titulo": "Million Reasons - Lady Gaga",
+        "thumb": "https://img.youtube.com/vi/en2D_5TzXCA/0.jpg",
+        "url": "https://www.youtube.com/watch?v=en2D_5TzXCA",
+        "genero": "PopInternacional"
+    }
+]
