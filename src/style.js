@@ -76,7 +76,7 @@ export const Banner = styled.div`
     position: absolute;
     top: 70px;
     width: 100vw;
-    height: 100vw;
+    height: 50vh;
     opacity: .7;
     background-image: ${props => props.backgroundImage};
     background-size: cover;
@@ -94,7 +94,7 @@ export const Banner = styled.div`
 
 export const Section = styled.div`
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     background-color: transparent;
     color: #fff;
     margin-top: 70px;
@@ -105,6 +105,9 @@ export const Section = styled.div`
 export const SectionGenero = styled.section`
     display: flex;
     flex-direction: column;
+    min-width: 280px;
+    max-width: 90vw;
+    margin: 0 auto;
 
     h2{
         padding: 1rem;
@@ -112,9 +115,10 @@ export const SectionGenero = styled.section`
 
     div{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
         gap: 1rem;
+        width: 100%;
     }
 `;
 
@@ -143,27 +147,19 @@ export const SectionAssistir = styled(SectionNovoVideo)`
     padding: 2rem;
 `
 
-export const Card = styled.div`  
-    width: 400px;
-    height: 250px;
-    position: relative;
-    border: 3px solid ${props => cor[`cor${props.corBorda}`]};
-    border-radius: 5px;
-
+export const Card = styled.div`
     img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        max-height: 250px;
+        width: 28vw;
+        border: 3px solid ${props => cor[`cor${props.corBorda}`]};
+        border-radius: 5px;
     }
 `;
 
 export const Footer = styled.footer`
     position: absolute;
-    bottom: 0;
     width: 100%;
     height: 70px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -7,15 +7,15 @@ const Cabecalho = () => {
             <Link to="/">
                 <img src='./img/logo.png' alt='Logo MusicFlix' />
             </Link>
-            <Button
-                corBorda={'#ffffff'}
-                corFundo={"transparent"}
-                corTexto={'#ffffff'}
-            >
-                <Link to="/novoVideo">
+            <Link to="/novoVideo">
+                <Button
+                    corBorda={'#ffffff'}
+                    corFundo={"transparent"}
+                    corTexto={'#ffffff'}
+                >
                     Novo vídeo
-                </Link>
-            </Button>
+                </Button>
+            </Link>
         </Header >
     )
 }

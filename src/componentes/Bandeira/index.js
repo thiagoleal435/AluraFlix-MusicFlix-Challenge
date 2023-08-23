@@ -1,9 +1,9 @@
 import { Banner } from "../../style";
 
-const Bandeira = ({ img }) => {
+const Bandeira = () => {
     return (
         <Banner
-            backgroundImage={`url('./img/banner-${img}.jpg')`}
+            backgroundImage={`url('../img/banner-favorito.jpg')`}
         >
         </Banner>
     )

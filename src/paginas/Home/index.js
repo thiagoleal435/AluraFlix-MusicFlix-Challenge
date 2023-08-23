@@ -1,31 +1,30 @@
 import { useState } from "react";
-import { GlobalStyles } from "../../style";
-import Cabecalho from "../../componentes/Cabecalho";
 import Bandeira from "../../componentes/Bandeira";
-import Rodape from "../../componentes/Rodape";
 import Carousel from "../../componentes/Carrosel/Carousel";
 import Genero, { generos, filtrarPorGenero } from "../../componentes/Genero";
 import VideoCard from "../../componentes/Carrosel/VideoCard";
 import Container from "../../componentes/Container";
 import PaginaPadrao from "../../componentes/PaginaPadrao";
 
-function Home() {
+const Home = () => {
 
     return (
         <>
-            <PaginaPadrao />
-            <Bandeira img={'favorito'} />
-            <Container>
-                {
-                    generos.map((genero, indice) =>
-                        <Genero genero={genero}>
-                            {filtrarPorGenero(indice).map((video) =>
-                                <VideoCard genero={video.genero} id={video.id} key={video.id} />
-                            )}
-                        </Genero>
-                    )
-                }
-                {/* {generos.map((genero, index) => {
+            <PaginaPadrao>
+                <Bandeira />
+                <Container>
+                    {
+                        generos.map((genero, indice) =>
+                            <Genero genero={genero}>
+                                <Carousel>
+                                    {filtrarPorGenero(indice).map((video) =>
+                                        <VideoCard genero={video.genero} id={video.id} key={video.id} />
+                                    )}
+                                </Carousel>
+                            </Genero>
+                        )
+                    }
+                    {/* {generos.map((genero, index) => {
           <Genero genero={genero}>
             <Carousel>
               {filtrarPorGenero(index).map((video) =>
@@ -35,7 +34,8 @@ function Home() {
           </Genero>
         })} */}
 
-            </Container>
+                </Container>
+            </PaginaPadrao>
         </>
     );
 }

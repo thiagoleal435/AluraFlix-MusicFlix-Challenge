@@ -1,3 +1,4 @@
+import './Carousel.css'
 import Slider from "react-slick";
 
 const Carousel = ({ children }) => {
@@ -5,19 +6,18 @@ const Carousel = ({ children }) => {
         dots: false,
         infinite: false,
         speed: 500,
-        variableWidth: true,
-        variableHeight: true,
-        // slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0
     };
 
-    // return (
-    //     <div>
-    //         <Slider {...settings}>
-    //             {children}
-    //         </Slider>
-    //     </div>
-    // );
+    return (
+        <div>
+            <Slider {...settings}>
+                {children}
+            </Slider>
+        </div>
+    );
 }
 
 export default Carousel;
