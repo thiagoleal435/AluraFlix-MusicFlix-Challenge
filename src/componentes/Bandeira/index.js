@@ -5,6 +5,7 @@ const Bandeira = () => {
         <Banner
             backgroundImage={`url('../img/banner-favorito.jpg')`}
         >
+            <hr></hr>
         </Banner>
     )
 }

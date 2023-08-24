@@ -72,6 +72,16 @@ export const Button = styled.button`
     cursor: pointer;
 `;
 
+export const TituloGenero = styled.button`
+    border: none;
+    font-size: ${props => props.fontSize};
+    padding: .5rem 1rem;
+    background-color: ${props => cor[`cor${props.corFundo}`]};
+    border-radius: 5px;
+    color: white;
+    margin-left: 0;
+`
+
 export const Banner = styled.div`
     position: absolute;
     top: 70px;
@@ -82,25 +92,55 @@ export const Banner = styled.div`
     background-size: cover;
     z-index: -1;
     background-position: center;
+
+    hr{
+        margin-top: 110vh;
+        border: 3px solid ${cor.corRock};
+    }
    
     @media (min-width:768px) {
             height: calc(90vh - 72px);
     }
     
     @media (min-width:1024px) {
-            height: calc(100vh - 93px);
+            height: calc(120vh - 93px);
     }
 `;
 
-export const Section = styled.div`
+export const Section = styled.section`
     width: 100%;
-    min-height: 100vh;
     background-color: transparent;
     color: #fff;
-    margin-top: 70px;
     text-align: center;
     overflow: hidden;
+    margin-top: 70px;
 `;
+
+export const SectionBanner = styled.section`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+
+    div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        width: 40%;
+        margin-top: 2rem;
+    }
+
+    h3{
+        padding-top: 1rem;
+        color: white;
+        font-weight: 300;
+    }
+
+    iframe{ 
+    }
+`
 
 export const SectionGenero = styled.section`
     display: flex;
@@ -144,7 +184,8 @@ export const SectionPagina404 = styled(SectionNovoVideo)`
 
 
 export const SectionAssistir = styled(SectionNovoVideo)`
-    padding: 2rem;
+    text-align: center;
+    margin-top: 70px;
 `
 
 export const Card = styled.div`
@@ -156,10 +197,8 @@ export const Card = styled.div`
 `;
 
 export const Footer = styled.footer`
-    position: absolute;
     width: 100%;
     height: 70px;
-    margin-top: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;

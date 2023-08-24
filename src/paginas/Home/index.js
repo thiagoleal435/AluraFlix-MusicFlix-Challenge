@@ -5,6 +5,7 @@ import Genero, { generos, filtrarPorGenero } from "../../componentes/Genero";
 import VideoCard from "../../componentes/Carrosel/VideoCard";
 import Container from "../../componentes/Container";
 import PaginaPadrao from "../../componentes/PaginaPadrao";
+import BannerMain from "../../componentes/BandeiraInicial";
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
         <>
             <PaginaPadrao>
                 <Bandeira />
+                <BannerMain genero={'Rock'} id={'fJ9rUzIMcZQ'} />
                 <Container>
                     {
                         generos.map((genero, indice) =>

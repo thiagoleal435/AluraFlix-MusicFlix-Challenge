@@ -5,7 +5,7 @@ const Cabecalho = () => {
     return (
         <Header>
             <Link to="/">
-                <img src='./img/logo.png' alt='Logo MusicFlix' />
+                <img src='../img/logo.png' alt='Logo MusicFlix' />
             </Link>
             <Link to="/novoVideo">
                 <Button

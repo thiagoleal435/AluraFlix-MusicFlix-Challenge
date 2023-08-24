@@ -1,8 +1,8 @@
-import { SectionGenero } from "../../style";
+import { SectionGenero, TituloGenero } from "../../style";
+import './Genero.css'
 import videos from '../../json/db.json'
 
 export const generos = [
-    "Rock",
     "MPB",
     "PopInternacional"
 ];
@@ -13,12 +13,19 @@ export function filtrarPorGenero(id) {
 
 const Genero = ({ genero, children }) => {
     return (
-        <SectionGenero>
-            <h2>{genero}</h2>
-            <div>
-                {children}
+        <div className='genero'>
+            <div className='genero__titulo'>
+                <TituloGenero fontSize='1.5rem' corFundo={genero}>
+                    {genero}
+                </TituloGenero>
+                <p>Videos de musicas do gênero {genero}</p>
             </div>
-        </SectionGenero>
+            <SectionGenero>
+                <div>
+                    {children}
+                </div>
+            </SectionGenero>
+        </div>
     )
 }
 

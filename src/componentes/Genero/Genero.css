@@ -1,0 +1,14 @@
+.genero {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.genero__titulo {
+    display: flex;
+    margin-left: 5.5%;
+    gap: 1rem;
+    align-items: center;
+}

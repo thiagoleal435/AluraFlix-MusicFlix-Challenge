@@ -15,17 +15,15 @@ const Assistir = () => {
     return (
         <>
             <PaginaPadrao>
-                <Container>
-                    <SectionAssistir>
-                        <iframe
-                            width="945" height="580"
-                            src={`https://www.youtube.com/embed/${video.id}`}
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </SectionAssistir>
-                </Container>
+                <SectionAssistir>
+                    <iframe
+                        width="945" height="480"
+                        src={`https://www.youtube.com/embed/${video.id}`}
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </SectionAssistir>
             </PaginaPadrao>
         </>
     )
