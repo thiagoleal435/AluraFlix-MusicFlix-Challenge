@@ -1,14 +1,13 @@
-.carousel-container {
+.carousel__container {
     width: 100%;
     overflow: hidden;
-    display: flex;
 }
 
-/* Track */
 .rs-container {
     display: flex;
     transition: transform 0.3s ease;
-    width: 100%;
+    width: 80%;
+    /* Ocupar a largura total */
 }
 
 .rs-handle {
@@ -24,9 +23,9 @@
     border-radius: 50% 0 0 50%;
 }
 
-/* Item */
 .rs-slide {
     flex: 0 0 auto;
+    /* Não limitar a largura dos slides */
     height: 100px;
     text-align: center;
     line-height: 100px;
@@ -34,7 +33,17 @@
     white-space: nowrap;
 }
 
+.slick-slide {
+    padding: 0 12px;
+}
+
 .slick-prev::before,
-.slick-next::before {
-    display: none;
+.slick-next::before {}
+
+@media screen and (max-width: 1024px) {
+
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
 }

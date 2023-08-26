@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom";
-import Container from "../../componentes/Container";
-import { SectionAssistir } from "../../style";
 import videos from '../../json/db.json';
 import PaginNaoEncontrada from "../PaginaNaoEncontrada";
 import PaginaPadrao from "../../componentes/PaginaPadrao";
+import { styled } from "styled-components";
 
 const Assistir = () => {
     const parametro = useParams();
@@ -11,6 +10,13 @@ const Assistir = () => {
     if (!video) {
         return <PaginNaoEncontrada />
     }
+
+    const SectionAssistir = styled.section`
+        padding-top: 5rem;
+        height: 100vh;
+        text-align: center;
+        margin-top: 70px;
+    `;
 
     return (
         <>

@@ -1,10 +1,10 @@
-import { SectionGenero, TituloGenero } from "../../style";
-import './Genero.css'
 import videos from '../../json/db.json'
+import { SectionGenero, TituloGenero } from '../../style';
+import { styled } from 'styled-components';
 
 export const generos = [
     "MPB",
-    "PopInternacional"
+    "Pop Internacional"
 ];
 
 export function filtrarPorGenero(id) {
@@ -12,9 +12,24 @@ export function filtrarPorGenero(id) {
 }
 
 const Genero = ({ genero, children }) => {
+    const ContainerGenero = styled.section`
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        .genero__div{
+            display: flex;
+            margin-left: 1.75rem;
+            gap: 1rem;
+            align-items: center;
+        }
+    `;
+
     return (
-        <div className='genero'>
-            <div className='genero__titulo'>
+        <ContainerGenero>
+            <div className='genero__div'>
                 <TituloGenero fontSize='1.5rem' corFundo={genero}>
                     {genero}
                 </TituloGenero>
@@ -25,7 +40,7 @@ const Genero = ({ genero, children }) => {
                     {children}
                 </div>
             </SectionGenero>
-        </div>
+        </ContainerGenero>
     )
 }
 

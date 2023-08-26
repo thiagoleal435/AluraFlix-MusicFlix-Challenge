@@ -1,12 +1,28 @@
+import { styled } from "styled-components";
 import Cabecalho from "../../componentes/Cabecalho";
 import Rodape from "../../componentes/Rodape";
-import { GlobalStyles, SectionPagina404 } from "../../style";
 import erro404 from './erro-404.png'
 
 const PaginNaoEncontrada = () => {
+    const SectionPagina404 = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    height: 100vh;
+
+    h2{
+        color: ${props => props.theme.cores.primaria};
+    }
+
+    img{
+        width: 50%;
+    }
+`;
+
     return (
         <>
-            <GlobalStyles />
             <Cabecalho />
             <SectionPagina404>
                 <h2>Ops! Página não encontrada!</h2>
