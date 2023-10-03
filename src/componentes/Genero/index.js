@@ -1,45 +1,37 @@
-import videos from '../../json/db.json'
-import { SectionGenero, TituloGenero } from '../../style';
+import { TituloGenero } from '../../style';
 import { styled } from 'styled-components';
 
-export const generos = [
-    "MPB",
-    "Pop Internacional"
-];
-
-export function filtrarPorGenero(id) {
-    return videos.filter(video => video.genero === generos[id])
-}
-
-const Genero = ({ genero, children }) => {
-    const ContainerGenero = styled.section`
+const ContainerGenero = styled.section`
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        margin: 3rem 0;
         gap: 1rem;
-        margin-bottom: 2rem;
+    `;
 
-        .genero__div{
-            display: flex;
-            margin-left: 1.75rem;
-            gap: 1rem;
-            align-items: center;
+const ContainerTitulo = styled.div`
+        display: flex;
+        margin-left: 1.75rem;
+        gap: 1rem;
+        align-items: center;
+
+        @media (max-width: 1024px){
+            p{
+                font-size: .8rem;
+            }
         }
     `;
 
+const Genero = ({ corGenero, nomeGenero, children }) => {
     return (
         <ContainerGenero>
-            <div className='genero__div'>
-                <TituloGenero fontSize='1.5rem' corFundo={genero}>
-                    {genero}
+            <ContainerTitulo>
+                <TituloGenero fontSize='1.5rem' corFundo={corGenero}>
+                    {nomeGenero}
                 </TituloGenero>
-                <p>Videos de musicas do gênero {genero}</p>
-            </div>
-            <SectionGenero>
-                <div>
-                    {children}
-                </div>
-            </SectionGenero>
+                <p>Videos de músicas do gênero {nomeGenero}</p>
+            </ContainerTitulo>
+            {children}
         </ContainerGenero>
     )
 }

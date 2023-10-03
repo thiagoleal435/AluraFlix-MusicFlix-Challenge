@@ -1,43 +1,34 @@
-import { useState } from "react";
 import Bandeira from "../../componentes/Bandeira";
 import Carousel from "../../componentes/Carrosel/Carousel";
-import Genero, { generos, filtrarPorGenero } from "../../componentes/Genero";
+import Genero from "../../componentes/Genero";
 import VideoCard from "../../componentes/Carrosel/VideoCard";
-import Container from "../../componentes/Container";
-import PaginaPadrao from "../../componentes/PaginaPadrao";
 import BannerMain from "../../componentes/BandeiraInicial";
+import { useDadosContexto } from "../../contextos/dadosFormulario";
 
 const Home = () => {
+    const { videos, generos } = useDadosContexto();
+    console.log(videos)
+    const generoRock = generos.find(genero => genero.nome === "Rock")
 
     return (
         <>
-            <PaginaPadrao>
-                <Bandeira />
-                <BannerMain genero={'Rock'} id={'fJ9rUzIMcZQ'} />
-                <Container>
-                    {
-                        generos.map((genero, indice) =>
-                            <Genero genero={genero}>
-                                <Carousel>
-                                    {filtrarPorGenero(indice).map((video) =>
-                                        <VideoCard genero={video.genero} id={video.id} key={video.id} />
-                                    )}
-                                </Carousel>
-                            </Genero>
-                        )
-                    }
-                    {/* {generos.map((genero, index) => {
-          <Genero genero={genero}>
-            <Carousel>
-              {filtrarPorGenero(index).map((video) =>
-                <VideoCard url={video.url} key={video.url} />
-              )}
-            </Carousel>
-          </Genero>
-        })} */}
-
-                </Container>
-            </PaginaPadrao>
+            <Bandeira />
+            <BannerMain
+                nomeGenero={generoRock.nome}
+                corGenero={generoRock.cor}
+            />
+            {
+                generos.filter(genero => genero.nome !== "Rock").map((genero, indice) => {
+                    return <Genero corGenero={genero.cor} nomeGenero={genero.nome} key={indice}>
+                        <Carousel>
+                            {videos.filter(video => video.genero === genero.nome).map((video) => {
+                                return <VideoCard corGenero={genero.cor} id={video.id} key={video.id} />
+                            }
+                            )}
+                        </Carousel>
+                    </Genero>
+                })
+            }
         </>
     );
 }

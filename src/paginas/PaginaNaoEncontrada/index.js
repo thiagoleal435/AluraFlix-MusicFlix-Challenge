@@ -1,10 +1,7 @@
 import { styled } from "styled-components";
-import Cabecalho from "../../componentes/Cabecalho";
-import Rodape from "../../componentes/Rodape";
 import erro404 from './erro-404.png'
 
-const PaginNaoEncontrada = () => {
-    const SectionPagina404 = styled.section`
+const SectionPagina404 = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,15 +18,13 @@ const PaginNaoEncontrada = () => {
     }
 `;
 
+const PaginNaoEncontrada = () => {
+
     return (
-        <>
-            <Cabecalho />
-            <SectionPagina404>
-                <h2>Ops! Página não encontrada!</h2>
-                <img src={erro404} alt="Logo de página não encontrada" />
-            </SectionPagina404>
-            <Rodape />
-        </>
+        <SectionPagina404>
+            <h2>Ops! Página não encontrada!</h2>
+            <img src={erro404} alt="Logo de página não encontrada" />
+        </SectionPagina404>
     )
 }
 

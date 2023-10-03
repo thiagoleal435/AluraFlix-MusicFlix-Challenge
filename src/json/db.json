@@ -1,128 +1,165 @@
-[
-    {
-        "id": "KQetemT1sWc",
-        "titulo": "Here comes the sun - The Beatles",
-        "thumb": "https://img.youtube.com/vi/KQetemT1sWc/0.jpg",
-        "url": "https://www.youtube.com/watch?v=KQetemT1sWc",
-        "genero": "Rock"
-    },
-    {
-        "id": "8SbUC-UaAxE",
-        "titulo": "November rain - Guns N' Roses",
-        "thumb": "https://img.youtube.com/vi/8SbUC-UaAxE/0.jpg",
-        "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
-        "genero": "Rock"
-    },
-    {
-        "id": "mzJj5-lubeM",
-        "titulo": "Scar Tissue - Red Hot Chili Peppers",
-        "thumb": "https://img.youtube.com/vi/mzJj5-lubeM/0.jpg",
-        "url": "https://www.youtube.com/watch?v=mzJj5-lubeM",
-        "genero": "Rock"
-    },
-    {
-        "id": "eBG7P-K-r1Y",
-        "titulo": "Everlong - Foo Fighters",
-        "thumb": "https://img.youtube.com/vi/eBG7P-K-r1Y/0.jpg",
-        "url": "https://www.youtube.com/watch?v=eBG7P-K-r1Y",
-        "genero": "Rock"
-    },
-    {
-        "id": "kXYiU_JCYtU",
-        "titulo": "Numb - Linkin Park",
-        "thumb": "https://img.youtube.com/vi/kXYiU_JCYtU/0.jpg",
-        "url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
-        "genero": "Rock"
-    },
-    {
-        "id": "94bGzWyHbu0",
-        "titulo": "Nightmare - Avengend Sevenfold",
-        "thumb": "https://img.youtube.com/vi/94bGzWyHbu0/0.jpg",
-        "url": "https://www.youtube.com/watch?v=94bGzWyHbu0",
-        "genero": "Rock"
-    },
-    {
-        "id": "FBMMNBOXins",
-        "titulo": "Chão de giz - Zé Ramalho (Ao vivo 2005)",
-        "thumb": "https://img.youtube.com/vi/FBMMNBOXins/0.jpg",
-        "url": "https://www.youtube.com/watch?v=FBMMNBOXins",
-        "genero": "MPB"
-    },
-    {
-        "id": "3rn2N0ZbLEQ",
-        "titulo": "É isso aí - Ana Carolina e Seu jorge (The Blower's Daughter)",
-        "thumb": "https://img.youtube.com/vi/3rn2N0ZbLEQ/0.jpg",
-        "url": "https://www.youtube.com/watch?v=3rn2N0ZbLEQ",
-        "genero": "MPB"
-    },
-    {
-        "id": "t7M89YJAPhM",
-        "titulo": "Ainda bem - Marisa Monte",
-        "thumb": "https://img.youtube.com/vi/t7M89YJAPhM/0.jpg",
-        "url": "https://www.youtube.com/watch?v=t7M89YJAPhM",
-        "genero": "MPB"
-    },
-    {
-        "id": "z7yWWsI5KcQ",
-        "titulo": "Sozinho - Caetano Veloso (Ao vivo no Rio De Janeiro / 1998)",
-        "thumb": "https://img.youtube.com/vi/z7yWWsI5KcQ/0.jpg",
-        "url": "https://www.youtube.com/watch?v=z7yWWsI5KcQ&",
-        "genero": "MPB"
-    },
-    {
-        "id": "JZusBA9VT7E",
-        "titulo": "Domingas - Jorge Ben Jor (1971)",
-        "thumb": "https://img.youtube.com/vi/JZusBA9VT7E/0.jpg",
-        "url": "https://www.youtube.com/watch?v=JZusBA9VT7E",
-        "genero": "MPB"
-    },
-    {
-        "id": "8PKs5Z1Cw_s",
-        "titulo": "Á primeira vista - Chico César",
-        "thumb": "https://img.youtube.com/vi/8PKs5Z1Cw_s/0.jpg",
-        "url": "https://www.youtube.com/watch?v=8PKs5Z1Cw_s",
-        "genero": "MPB"
-    },
-    {
-        "id": "W-w3WfgpcGg",
-        "titulo": "It Will Rain - Bruno Mars",
-        "thumb": "https://img.youtube.com/vi/W-w3WfgpcGg/0.jpg",
-        "url": "https://www.youtube.com/watch?v=W-w3WfgpcGg",
-        "genero": "Pop Internacional"
-    },
-    {
-        "id": "dvgZkm1xWPE",
-        "titulo": "Viva La Vida - Coldplay",
-        "thumb": "https://img.youtube.com/vi/dvgZkm1xWPE/0.jpg",
-        "url": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
-        "genero": "Pop Internacional"
-    },
-    {
-        "id": "XpqqjU7u5Yc",
-        "titulo": "How Deep Is Your Love - Bee Gees",
-        "thumb": "https://img.youtube.com/vi/XpqqjU7u5Yc/0.jpg",
-        "url": "https://www.youtube.com/watch?v=XpqqjU7u5Yc",
-        "genero": "Pop Internacional"
-    },
-    {
-        "id": "djV11Xbc914",
-        "titulo": "Take On Me - a-ha",
-        "thumb": "https://img.youtube.com/vi/djV11Xbc914/0.jpg",
-        "url": "https://www.youtube.com/watch?v=djV11Xbc914",
-        "genero": "Pop Internacional"
-    },
-    {
-        "id": "5X-Mrc2l1d0",
-        "titulo": "Rock With You - Michael Jackson",
-        "thumb": "https://img.youtube.com/vi/5X-Mrc2l1d0/0.jpg",
-        "url": "https://www.youtube.com/watch?v=5X-Mrc2l1d0",
-        "genero": "Pop Internacional"
-    },
-    {
-        "id": "en2D_5TzXCA",
-        "titulo": "Million Reasons - Lady Gaga",
-        "thumb": "https://img.youtube.com/vi/en2D_5TzXCA/0.jpg",
-        "url": "https://www.youtube.com/watch?v=en2D_5TzXCA",
-        "genero": "Pop Internacional"
-    }
-]
+{
+    "videos": [
+        {
+            "id": "KQetemT1sWc",
+            "titulo": "Here comes the sun - The Beatles",
+            "thumb": "https://img.youtube.com/vi/KQetemT1sWc/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=KQetemT1sWc",
+            "genero": "Rock",
+            "descricao": "Album: Abbey Road / Ano de lançamento: 1969"
+        },
+        {
+            "id": "8SbUC-UaAxE",
+            "titulo": "November rain - Guns N' Roses",
+            "thumb": "https://img.youtube.com/vi/8SbUC-UaAxE/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
+            "genero": "Rock",
+            "descricao": "Album: Use Your Ilusion I / Ano de lançamento: 1991"
+        },
+        {
+            "id": "mzJj5-lubeM",
+            "titulo": "Scar Tissue - Red Hot Chili Peppers",
+            "thumb": "https://img.youtube.com/vi/mzJj5-lubeM/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=mzJj5-lubeM",
+            "genero": "Rock",
+            "descricao": "Album: Californication / Ano de lançamento: 1999"
+        },
+        {
+            "id": "eBG7P-K-r1Y",
+            "titulo": "Everlong - Foo Fighters",
+            "thumb": "https://img.youtube.com/vi/eBG7P-K-r1Y/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=eBG7P-K-r1Y",
+            "genero": "Rock",
+            "descricao": "Album: The Colour and the Shape / Ano de lançamento: 1997"
+        },
+        {
+            "id": "kXYiU_JCYtU",
+            "titulo": "Numb - Linkin Park",
+            "thumb": "https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+            "genero": "Rock",
+            "descricao": "Album: Meteora / Ano de lançamento: 2003"
+        },
+        {
+            "id": "94bGzWyHbu0",
+            "titulo": "Nightmare - Avengend Sevenfold",
+            "thumb": "https://img.youtube.com/vi/94bGzWyHbu0/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=94bGzWyHbu0",
+            "genero": "Rock",
+            "descricao": "Album: Nightmare / Ano de lançamento: 2010"
+        },
+        {
+            "id": "FBMMNBOXins",
+            "titulo": "Chão de giz - Zé Ramalho (Ao vivo 2005)",
+            "thumb": "https://img.youtube.com/vi/FBMMNBOXins/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=FBMMNBOXins",
+            "genero": "MPB",
+            "descricao": "Album: Zé Ramalho / Ano de lançamento: 1978"
+        },
+        {
+            "id": "3rn2N0ZbLEQ",
+            "titulo": "É isso aí - Ana Carolina e Seu jorge (The Blower's Daughter)",
+            "thumb": "https://img.youtube.com/vi/3rn2N0ZbLEQ/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=3rn2N0ZbLEQ",
+            "genero": "MPB",
+            "descricao": "Album: Ana & Jorge / Ano de lançamento: 2005"
+        },
+        {
+            "id": "t7M89YJAPhM",
+            "titulo": "Ainda bem - Marisa Monte",
+            "thumb": "https://img.youtube.com/vi/t7M89YJAPhM/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=t7M89YJAPhM",
+            "genero": "MPB",
+            "descricao": "Album: O Que Você Quer Saber De Verdade / Ano de lançamento: 2011"
+        },
+        {
+            "id": "z7yWWsI5KcQ",
+            "titulo": "Sozinho - Caetano Veloso (Ao vivo no Rio De Janeiro / 1998)",
+            "thumb": "https://img.youtube.com/vi/z7yWWsI5KcQ/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=z7yWWsI5KcQ&",
+            "genero": "MPB",
+            "descricao": "Album: Prenda Minha / Ano de lançamento: 1998"
+        },
+        {
+            "id": "JZusBA9VT7E",
+            "titulo": "Domingas - Jorge Ben Jor (1971)",
+            "thumb": "https://img.youtube.com/vi/JZusBA9VT7E/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=JZusBA9VT7E",
+            "genero": "MPB",
+            "descricao": "Album: Jorge Ben / Ano de lançamento: 1969"
+        },
+        {
+            "id": "8PKs5Z1Cw_s",
+            "titulo": "Á primeira vista - Chico César",
+            "thumb": "https://img.youtube.com/vi/8PKs5Z1Cw_s/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=8PKs5Z1Cw_s",
+            "genero": "MPB",
+            "descricao": "Album: Aos Vivos / Ano de lançamento: 1995"
+        },
+        {
+            "id": "W-w3WfgpcGg",
+            "titulo": "It Will Rain - Bruno Mars",
+            "thumb": "https://img.youtube.com/vi/W-w3WfgpcGg/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=W-w3WfgpcGg",
+            "genero": "Pop Internacional",
+            "descricao": "Album: Trilha sonora The Twilight Saga: Breaking Dawn / Ano de lançamento: 2011"
+        },
+        {
+            "id": "dvgZkm1xWPE",
+            "titulo": "Viva La Vida - Coldplay",
+            "thumb": "https://img.youtube.com/vi/dvgZkm1xWPE/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
+            "genero": "Pop Internacional",
+            "descricao": "Album: Viva la Vida or Death and All His Friends / Ano de lançamento: 2008"
+        },
+        {
+            "id": "XpqqjU7u5Yc",
+            "titulo": "How Deep Is Your Love - Bee Gees",
+            "thumb": "https://img.youtube.com/vi/XpqqjU7u5Yc/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=XpqqjU7u5Yc",
+            "genero": "Pop Internacional",
+            "descricao": "Album: Trilha sonora Saturday Night Fever / Ano de lançamento: 1977"
+        },
+        {
+            "id": "djV11Xbc914",
+            "titulo": "Take On Me - a-ha",
+            "thumb": "https://img.youtube.com/vi/djV11Xbc914/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=djV11Xbc914",
+            "genero": "Pop Internacional",
+            "descricao": "Album: Hunting High and Low / Ano de lançamento: 1985"
+        },
+        {
+            "id": "5X-Mrc2l1d0",
+            "titulo": "Rock With You - Michael Jackson",
+            "thumb": "https://img.youtube.com/vi/5X-Mrc2l1d0/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=5X-Mrc2l1d0",
+            "genero": "Pop Internacional",
+            "descricao": "Album: Off The Wall / Ano de lançamento: 1979"
+        },
+        {
+            "id": "en2D_5TzXCA",
+            "titulo": "Million Reasons - Lady Gaga",
+            "thumb": "https://img.youtube.com/vi/en2D_5TzXCA/hqdefault.jpg",
+            "url": "https://www.youtube.com/watch?v=en2D_5TzXCA",
+            "genero": "Pop Internacional",
+            "descricao": "Album: Joanne / Ano de lançamento: 2016"
+        }
+    ],
+    "generos": [
+        {
+            "nome": "Rock",
+            "descricao": "Clássicos do rock Internacional",
+            "cor": "#000000"
+        },
+        {
+            "nome": "MPB",
+            "descricao": "Melhores do MPB",
+            "cor": "#9CD33B"
+        },
+        {
+            "nome": "Pop Internacional",
+            "descricao": "Clipes de Pop internacional diversos",
+            "cor": "#6B5BE2"
+        }
+    ]
+}

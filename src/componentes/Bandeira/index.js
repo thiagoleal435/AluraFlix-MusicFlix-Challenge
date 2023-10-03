@@ -1,44 +1,42 @@
 import { styled } from "styled-components";
+import { theme } from "../../style";
 
-const Bandeira = () => {
-    const Banner = styled.div`
+const Banner = styled.div`
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
     height: 115vh;
     opacity: .7;
-    background-image: ${props => props.backgroundImage};
+    background-image: url('../img/banner-favorito.jpg');
     background-size: cover;
     z-index: -1;
     background-position: center;
 
     hr{
         margin-top: 120vh;
-        border: 3px solid ${props => props.theme.cores.Rock};
+        border: 3px solid ${theme.cores["Rock"]};
     }
 
     @media (max-width:1024px) {
-        height: calc(90vh - 72px); 
+        height: calc(60vh - 72px); 
         hr{
-            margin-top: 85vh;
+            margin-top: 58vh;
         }
     }
    
     @media (max-width:768px) {
-        height: calc(60vh - 51px);
+        height: calc(40vh - 51px);
         hr{
-            margin-top: 60vh;
+            margin-top: 38vh;
         }
     }
-    
-    
 `;
 
+const Bandeira = () => {
+
     return (
-        <Banner
-            backgroundImage={`url('../img/banner-favorito.jpg')`}
-        >
+        <Banner>
             <hr></hr>
         </Banner>
     )

@@ -1,14 +1,15 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import { theme } from "../../style";
 
-const Rodape = () => {
-    const Footer = styled.footer`
+const Footer = styled.footer`
     width: 100%;
     height: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-top: 3px solid ${props => props.theme.cores.primaria};
+    margin-bottom: 1rem;
+    border-top: 3px solid ${theme.cores['primaria']};
 
     img{
         height: 50px;
@@ -24,6 +25,8 @@ const Rodape = () => {
     }
 }
 `;
+
+const Rodape = () => {
 
     return (
         <Footer>

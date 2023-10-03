@@ -1,18 +1,15 @@
-import { Link } from 'react-router-dom';
-import { SectionGenero, TituloGenero } from '../../style';
+import { useDadosContexto } from '../../contextos/dadosFormulario';
+import { TituloGenero } from '../../style';
 import Carousel from '../Carrosel/Carousel';
-import videos from '../../json/db.json';
 import VideoCard from '../Carrosel/VideoCard';
 import { styled } from 'styled-components';
 
-const BannerMain = ({ genero, id }) => {
-    const SectionBanner = styled.section`
+const SectionBanner = styled.section`
     display: flex;
-    justify-content: space-between;
-    margin-top: 140px;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    gap: 5%;
+    margin-top: 100px;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    gap: 10%;
 
     .div__info{
         display: flex;
@@ -28,14 +25,27 @@ const BannerMain = ({ genero, id }) => {
         color: white;
         font-weight: 300;
     }
+
+    p{
+        text-align: start;
+    }
+
+    @media (max-width: 1024px){
+        flex-direction: column-reverse;
+        margin-top: 120px;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+
+        h3, p{
+            display: none;
+        }
+    }
 `;
 
-    const Iframe = styled.div`
+const Iframe = styled.div`
     position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 32.5%;
-    flex: 1;
+    width: 70%;
+    height: 440px;
 
         iframe{
             position: absolute;
@@ -44,18 +54,30 @@ const BannerMain = ({ genero, id }) => {
             top: 0;
             left: 0;
         }
-
+        
     @media (max-width: 1024px){
-        padding-bottom: 40%;
+        width: 100%;
+        height: 440px;
+        margin-block: 3rem;
+    }
+
+    @media (max-width: 768px){
+        width: 100%;
+        height: 240px;
+        margin: 1rem 0;
     }
     `;
 
+const BannerMain = ({ corGenero, nomeGenero }) => {
+
+    const { videos } = useDadosContexto();
+
     return (
-        <>
+        <section>
             <SectionBanner>
                 <div className='div__info'>
-                    <TituloGenero fontSize='2.5rem' corFundo={genero}>
-                        {genero}
+                    <TituloGenero fontSize='2.5rem' corFundo={corGenero}>
+                        {nomeGenero}
                     </TituloGenero>
                     <h3>"Um Poema Épico"</h3>
                     <p>
@@ -73,14 +95,12 @@ const BannerMain = ({ genero, id }) => {
                     </iframe>
                 </Iframe>
             </SectionBanner>
-            <SectionGenero>
-                <Carousel>
-                    {videos.filter((video) => video.genero === genero).map((video) =>
-                        <VideoCard genero={genero} id={video.id} key={video.id} />
-                    )}
-                </Carousel>
-            </SectionGenero>
-        </>
+            <Carousel>
+                {videos.filter((video) => video.genero === nomeGenero).map((video) =>
+                    <VideoCard genero={nomeGenero} id={video.id} key={video.id} />
+                )}
+            </Carousel>
+        </section>
     )
 }
 
