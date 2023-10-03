@@ -45,7 +45,8 @@ const SectionBanner = styled.section`
 const Iframe = styled.div`
     position: relative;
     width: 70%;
-    height: 440px;
+    height: 480px;
+    margin-block: 3rem;
 
         iframe{
             position: absolute;
@@ -58,13 +59,12 @@ const Iframe = styled.div`
     @media (max-width: 1024px){
         width: 100%;
         height: 440px;
-        margin-block: 3rem;
     }
 
     @media (max-width: 768px){
         width: 100%;
         height: 240px;
-        margin: 1rem 0;
+        margin-block: 1rem;
     }
     `;
 
