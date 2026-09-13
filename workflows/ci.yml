@@ -1,0 +1,19 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  security:
+    uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@v1
+    with:
+      project_name: 'musicflix-frontend' # Nome do projeto que aparecerá no DefectDojo
+      stack_type: 'node'              # Essencial: define a stack para projetos React
+      run_dast: true                 # Mantenha false se o app não estiver hospedado
+      dast_target_url: 'https://music-flix-challlente-one.vercel.app/' # Descomente e preencha se run_dast for true
+    secrets:
+      DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
+      DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_API_KEY }}
