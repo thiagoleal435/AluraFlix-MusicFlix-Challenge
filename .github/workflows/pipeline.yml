@@ -1,14 +1,14 @@
-name: CI Pipeline
+name: DevSecOps Pipeline Test
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
   pull_request:
-    branches: [main, develop]
+    branches: [main]
 
 jobs:
   security:
-    uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@v1
+    uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@main
     with:
       project_name: 'musicflix-frontend' # Nome do projeto que aparecerá no DefectDojo
       stack_type: 'node'              # Essencial: define a stack para projetos React
