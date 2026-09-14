@@ -2,7 +2,7 @@ name: DevSecOps Pipeline Test
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
   pull_request:
     branches: [main]
 
@@ -16,4 +16,4 @@ jobs:
       dast_target_url: 'https://music-flix-challlente-one.vercel.app/' # Descomente e preencha se run_dast for true
     secrets:
       DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
-      DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_API_KEY }}
+      DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_TOKEN }}
