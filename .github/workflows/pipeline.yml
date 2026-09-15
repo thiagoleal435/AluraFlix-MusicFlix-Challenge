@@ -17,3 +17,92 @@ jobs:
     secrets:
       DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
       DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_TOKEN }}
+
+  quality-gate:
+    needs: security
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Security Reports
+        uses: actions/download-artifact@v4
+        with:
+          name: devsecops-reports
+          path: reports/
+        continue-on-error: true
+
+      - name: Quality Gate - Avaliar Resultados
+        run: |
+          echo "=== Quality Gate Integrado ==="
+          BLOCK=false
+          REASONS=""
+
+          # Verificar Gitleaks
+          GITLEAKS_FILE=$(find reports -name "gitleaks-results.json" 2>/dev/null | head -n 1)
+          if [ -n "$GITLEAKS_FILE" ] && [ -f "$GITLEAKS_FILE" ]; then
+            LEAKS=$(python3 -c "import sys,json; data=json.load(open('$GITLEAKS_FILE')); print(len(data))" 2>/dev/null || echo "0")
+            if [ "$LEAKS" -gt "0" ]; then
+              echo "❌ GITLEAKS: $LEAKS segredo(s) detectado(s)"
+              BLOCK=true
+              REASONS="$REASONS Segredos vazados ($LEAKS);"
+            else
+              echo "✅ GITLEAKS: Nenhum segredo encontrado"
+            fi
+          else
+            echo "⚠️ GITLEAKS: Relatório não encontrado"
+          fi
+
+          # Verificar Trivy (CRITICAL/HIGH)
+          TRIVY_FILE=$(find reports -name "trivy-fs-results.json" 2>/dev/null | head -n 1)
+          if [ -n "$TRIVY_FILE" ] && [ -f "$TRIVY_FILE" ]; then
+            CRITICAL=$(python3 -c "
+          import sys, json
+          data = json.load(open('$TRIVY_FILE'))
+          count = 0
+          for result in data.get('Results', []):
+              for vuln in result.get('Vulnerabilities', []):
+                  if vuln.get('Severity') in ['CRITICAL', 'HIGH']:
+                      count += 1
+          print(count)
+          " 2>/dev/null || echo "0")
+            if [ "$CRITICAL" -gt "0" ]; then
+              echo "❌ TRIVY: $CRITICAL vulnerabilidade(s) HIGH/CRITICAL"
+              BLOCK=true
+              REASONS="$REASONS Dependências vulneráveis ($CRITICAL HIGH/CRITICAL);"
+            else
+              echo "✅ TRIVY: Nenhuma vulnerabilidade HIGH/CRITICAL"
+            fi
+          else
+            echo "⚠️ TRIVY: Relatório não encontrado"
+          fi
+
+          # Verificar Semgrep
+          SEMGREP_FILE=$(find reports -name "semgrep-results.json" 2>/dev/null | head -n 1)
+          if [ -n "$SEMGREP_FILE" ] && [ -f "$SEMGREP_FILE" ]; then
+            FINDINGS=$(python3 -c "import sys,json; data=json.load(open('$SEMGREP_FILE')); print(len(data.get('results',[])))" 2>/dev/null || echo "0")
+            if [ "$FINDINGS" -gt "0" ]; then
+              echo "⚠️ SEMGREP: $FINDINGS finding(s) detectado(s)"
+            else
+              echo "✅ SEMGREP: Nenhum finding"
+            fi
+          fi
+
+          echo ""
+          echo "=================================="
+          if [ "$BLOCK" = true ]; then
+            echo "🚫 DECISÃO: BLOCKED"
+            echo "📋 MOTIVOS: $REASONS"
+            echo ""
+            echo "{\"decision\":\"BLOCKED\",\"reasons\":\"$REASONS\",\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > quality-gate-report.json
+            cat quality-gate-report.json
+            exit 1
+          else
+            echo "✅ DECISÃO: APPROVED"
+            echo "{\"decision\":\"APPROVED\",\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > quality-gate-report.json
+            exit 0
+          fi
+
+      - name: Upload Quality Gate Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-gate-report
+          path: quality-gate-report.json
